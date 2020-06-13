@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: coral;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+div .para{
+  border: 2px solid red;
+  border-radius: 8px;
+  
+}
+.sansserif {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.maintain {
+  text-align: center;
+  padding: 3px;
+  background-color:goldenrod;
+  color: white;
+}
+.maintain {
+  display: block;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+  <div class="nav-wrapper">
+    <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+            <a href ="index2.html">Home</a>
+        </div>
+        <div class="nav-link-wrapper">
+        <a href ="About.html">About</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href ="profile.html">Profile</a>
+          </div>
+            <div class="nav-link-wrapper">
+                <a href ="one.html">info</a>
+                </div>
+    </div>
+
+    <div class="right-side">
+        <div class="brand">
+        <div><a href = "intro.html">AKASH S</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<h1>My Profile Flip card</h1>
+<h3>place the cursor on my profile</h3>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+        <img src="images/profile.jpg " alt="" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>AKASH S</h1> 
+      <p>CSE Engineer</p> 
+      <p>K C G College of Technology</p>
+    </div>
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="two-column-wrapper">
+  </div>
+    
+    
+    
+
+    <div class="profile-content-wrapper">
+    <div class="para">
+      
+
+
+
+       
+      
+      <center><h1><i>Hi, thanks for visiting my site.</i></h1></center>
+     <ul> <li><b> <pclass="sansserif">This is based on tourism. I included top beautiful places which is situated in tamilnadu.
+        it is encouraging to know of the efforts spent by tourism researchers  on website development and evaluations.</p></b></li></ul>
+    </div>
+    </div>
+  
+</div>
+<footer class="maintain">
+  <p>Website by <div><a href = "intro.html">AKASH S</a></div><br>
+  <a href="http://www.tamilnadutourism.org/">Tamilnadu@tourism.com</a></p>
+</footer>
+</body>
+</html>
